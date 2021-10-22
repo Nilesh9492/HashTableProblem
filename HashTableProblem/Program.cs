@@ -34,7 +34,7 @@ namespace HashTableProblem
             Console.WriteLine("Value at 4th index : " + result4);
             string result6 = hash.Get("6");
             Console.WriteLine("Value at 6th index : " + result6);
-
+            hash.Remove("17");
         }
     }
 }

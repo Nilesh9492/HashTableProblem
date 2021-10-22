@@ -60,5 +60,25 @@ namespace HashTableProblem
             };
             linkedList.AddLast(item);
         }
+        public void Remove(K key)
+        {
+            int position = GetArrayPosition(key);
+            LinkedList<KeyValue<K, V>> linkedList = GetLinkedList(position);
+            bool itemFound = false;
+            KeyValue<K, V> foundItem = default(KeyValue<K, V>);
+            foreach (KeyValue<K, V> item in linkedList)
+            {
+                if (item.Key.Equals(key))
+                {
+                    foundItem = item;
+                    itemFound = true;
+                }
+            }
+            if (itemFound)
+            {
+                linkedList.Remove(foundItem);
+                Console.WriteLine("Removed value from index " + key);
+            }
+        }
     }
 }
