@@ -8,22 +8,33 @@ namespace HashTableProblem
         {
             Console.WriteLine("Welcome to Hash Table Program!");
             MyMapNode<string, string> hash = new MyMapNode<string, string>(5);
-            hash.Add("0", "To");
-            hash.Add("1", "be");
-            hash.Add("2", "or");
-            hash.Add("3", "not");
-            hash.Add("4", "To");
-            hash.Add("5", "be");
-            
-            string result0 = hash.Get("0");
-            Console.WriteLine("The Frequency of To : " + result0);
+            hash.Add("0", "Paranoids");
+            hash.Add("1", "are");
+            hash.Add("2", "not");
+            hash.Add("3", "paranoid");
+            hash.Add("4", "because");
+            hash.Add("5", "they");
+            hash.Add("6", "are");
+            hash.Add("7", "paranoid");
+            hash.Add("8", "but");
+            hash.Add("9", "because");
+            hash.Add("10", "they");
+            hash.Add("11", "keep");
+            hash.Add("12", "putting");
+            hash.Add("13", "themselves");
+            hash.Add("14", "deliberately");
+            hash.Add("15", "into");
+            hash.Add("16", "paranoid");
+            hash.Add("17", "avoidable");
+            hash.Add("18", "situations");
 
-            string result1 = hash.Get("1");
-            Console.WriteLine("The Frequency of be : " + result1);
             string result2 = hash.Get("2");
-            Console.WriteLine("The Frequency of or : " + result2);
-            string result3 = hash.Get("3");
-            Console.WriteLine("The Frequency of not : " + result3);
+            Console.WriteLine("Value at 2th index : " + result2);
+            string result4 = hash.Get("4");
+            Console.WriteLine("Value at 4th index : " + result4);
+            string result6 = hash.Get("6");
+            Console.WriteLine("Value at 6th index : " + result6);
+
         }
     }
 }
